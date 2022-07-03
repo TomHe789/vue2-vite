@@ -1,10 +1,18 @@
 <template>
-  <p>home list page</p>
+	<div>
+		<p>home list page</p>
+		<List />
+	</div>
 </template>
 
 <script>
-export default {}
+import List from './../components/List.vue'
+
+export default {
+	components: {
+		List,
+	},
+}
 </script>
 
-<style>
-</style>
+<style></style>
