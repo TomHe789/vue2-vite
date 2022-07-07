@@ -16,14 +16,14 @@ export default {
 		}
 	},
 	beforeRouteEnter(to, from, next) {
-		console.log('组件守卫 进入')
-		console.log(to, from)
+		//console.log('组件守卫 进入')
+		//console.log(to, from)
 		next(vm => {
-			console.log('home组件', vm.list)
+			//console.log('home组件', vm.list)
 		})
 	},
 	beforeRouteLeave(to, from, next) {
-		console.log('组件守卫 离开')
+		//console.log('组件守卫 离开')
 		const answer = window.confirm(
 			'Do you really want to leave? you have unsaved changes!'
 		)

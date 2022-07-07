@@ -7,7 +7,7 @@
 <script>
 export default {
 	mounted() {
-		console.log('user page', this.$route)
+		//console.log('user page', this.$route)
 	},
 }
 </script>

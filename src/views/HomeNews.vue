@@ -1,10 +1,21 @@
 <template>
-<p>home news page...</p>
+	<div>
+		<p>home news page...</p>
+		<p>{{ $store.state.count }}</p>
+		<p>{{ doneTodos }}</p>
+	</div>
 </template>
 
 <script>
-export default {}
+import { mapGetters } from 'vuex'
+
+export default {
+
+	computed: {
+		...mapGetters(['doneTodos'])
+	}
+
+}
 </script>
 
-<style>
-</style>
+<style></style>
